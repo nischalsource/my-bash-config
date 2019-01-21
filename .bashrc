@@ -10,8 +10,11 @@ alias hosts='sudo nano /etc/hosts'
 
 alias gs='git status'
 alias gp='git push'
+alias gpa='git branch -r | grep -v "\->" | while read remote; do git branch --track "${remote#origin/}" "$remote"; done && git fetch --all && git pull --all'
 alias gc='git commit -m'
 alias ga='git add'
+alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit'
+alias gpl='git pull'
 
 alias storm='cd /users/nbachu/PhpStormProjects'
 
@@ -49,3 +52,11 @@ alias mysql.config='sudo nano /usr/local/etc/my.cnf'
 
 alias jenkins.stop="launchctl unload /Library/LaunchDaemons/homebrew.mxcl.jenkins.plist"
 alias jenkins.start="launchctl load /Library/LaunchDaemons/homebrew.mxcl.jenkins.plist"
+
+alias dcl='docker container ls'
+alias devimages='cd /Users/nbachu/IntelliJProjects/PRINT/dev_images'
+alias dil='docker image ls'
+alias dkill='docker kill'
+alias dlog='function _dlog(){ docker logs $1;}; _dlog'
+
+
