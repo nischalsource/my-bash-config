@@ -54,7 +54,6 @@ alias jenkins.stop="launchctl unload /Library/LaunchDaemons/homebrew.mxcl.jenkin
 alias jenkins.start="launchctl load /Library/LaunchDaemons/homebrew.mxcl.jenkins.plist"
 
 alias dcl='docker container ls'
-alias devimages='cd /Users/nbachu/IntelliJProjects/PRINT/dev_images'
 alias dil='docker image ls'
 alias dkill='docker kill'
 alias dlog='function _dlog(){ docker logs $1;}; _dlog'
