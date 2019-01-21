@@ -59,4 +59,9 @@ alias dil='docker image ls'
 alias dkill='docker kill'
 alias dlog='function _dlog(){ docker logs $1;}; _dlog'
 
+alias listen1='netstat -an -ptcp | grep LISTEN'
+alias listen2='lsof -i -P | grep -i "listen"'
+
+alias listssh='cat ~/.ssh/config'
+
 
