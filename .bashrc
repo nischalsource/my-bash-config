@@ -17,6 +17,7 @@ alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Crese
 alias gpl='git pull'
 
 alias storm='cd /users/nbachu/PhpStormProjects'
+alias intelli='cd ~/Intellij/'
 
 alias listssh='cat ~/.ssh/config'
 alias sshconfig='nano ~/.ssh/config'
