@@ -1,12 +1,12 @@
 alias listalias='clear;cat ~/.bashrc'
-alias editalias=' nano ~/.bashrc'
-alias sourcealias='source  ~/.bashrc'
+alias editalias='vi ~/.bashrc'
+alias sourcealias='source ~/.bashrc'
 
 alias apuser='sudo -s -u _www'
 
 alias ll='ls -la'
 alias cl='clear'
-alias hosts='sudo nano /etc/hosts'
+alias hosts='sudo vi /etc/hosts'
 
 alias gs='git status'
 alias gp='git push'
@@ -20,7 +20,7 @@ alias storm='cd /users/nbachu/PhpStormProjects'
 alias intelli='cd ~/Intellij/'
 
 alias listssh='cat ~/.ssh/config'
-alias sshconfig='nano ~/.ssh/config'
+alias sshconfig='vi ~/.ssh/config'
 
 alias vhost='cd /private/etc/apache2/vhosts'
 alias www='cd /users/nbachu/PhpStormProjects/Lesershop24_Extern/magento'
@@ -44,12 +44,12 @@ alias nglogs.default-ssl.access='tail -250f /usr/local/etc/nginx/logs/default-ss
 alias php.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
 alias php.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
 alias phprs='php.stop && php.start'
-alias phpi='sudo nano /usr/local/etc/php/7.0/php.ini'
+alias phpi='sudo vi /usr/local/etc/php/7.0/php.ini'
 
 alias mysql.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
 alias mysql.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
 alias mysql.restart='mysql.stop && mysql.start'
-alias mysql.config='sudo nano /usr/local/etc/my.cnf'
+alias mysql.config='sudo vi /usr/local/etc/my.cnf'
 
 alias jenkins.stop="launchctl unload /Library/LaunchDaemons/homebrew.mxcl.jenkins.plist"
 alias jenkins.start="launchctl load /Library/LaunchDaemons/homebrew.mxcl.jenkins.plist"
