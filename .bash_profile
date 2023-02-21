@@ -1,16 +1,11 @@
-export PATH="/usr/local/sbin:$PATH"
+export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
-export PS1="\u@\h \w $ "
-
+export PATH=/usr/bin/git:$PATH
+export PS1="\u@\h$ "
+eval `ssh-agent`
+ssh-add ~/Dropbox/Administration/ssh/nischalbachuPrivate
 source ~/.bashrc
-source ~/git-completion.bash
+source ~/.git-completion.bash
+source ~/.kubectl_auto_complete
 
-#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bas$
-
-# pip should only run if there is a virtualenv currently activated
-
-#gpip(){
-#   PIP_REQUIRE_VIRTUALENV="" pip "$@"
-#}
-
-#export PIP_REQUIRE_VIRTUALENV=true
+complete -C /usr/local/bin/aws-okta aws-okta
